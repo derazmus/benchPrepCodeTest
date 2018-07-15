@@ -34,6 +34,20 @@ componentDidMount(){
         <header className="App-header">
            <h1 className="App-title">React List</h1>
            <h1 className="App-title"> Denise Appler Erazmus </h1>
+             <form>
+                <label>
+                  <input type="text" placeholder="Search..."/>
+                </label>
+                    <input className = "submit" type="submit" value="Submit" />
+             </form>
+             <button
+                onClick={() => quoteList.sortBy('theme')}>
+                Movies
+             </button>
+             <button
+                onClick={() => quoteList.sortBy('theme')}>
+                Games
+             </button>
         </header>  
         <table>
           <thead>
